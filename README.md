@@ -1,3 +1,12 @@
+
+# Deployed on
+https://myfirstgatsbysitemaster06675.gatsbyjs.io/
+
+npm install gatsby-plugin-image gatsby-plugin-sharp 
+npm install gatsby-source-filesystem
+npm install gatsby-plugin-mdx @mdx-js/mdx @mdx-js/react
+npm install gatsby-transformer-sharp
+http://localhost:8000/___graphql
 <p align="center">
   <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
     <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
@@ -24,7 +33,7 @@
 
     ```shell
     cd my-gatsby-site/
-    npm run develop
+    npm run develop    or gatsby develop
     ```
 
 3.  **Open the code and start customizing!**
@@ -52,3 +61,22 @@
 Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
 
 [<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+
+
+# other way
+npm install -g gatsby-cli
+gatsby --version          
+gatsby new {your-project-name} {link-to-starter}
+
+
+
+query MyQuery {
+  site {
+    siteMetadata {
+      title
+    }
+  }
+}
+
+
+Run project again after adding any plugin
