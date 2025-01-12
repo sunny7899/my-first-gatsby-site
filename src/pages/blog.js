@@ -25,7 +25,7 @@ const BlogPage = ({ data }) => {
 
             <h2>
               {/* <Link to={`/blog/${node.slug}`}> */}
-              <Link to={`/${node.slug}`}>
+              <Link to={`/blog/${node.fields.slug}`}>
                 {node.frontmatter.title}
               </Link>
             </h2>
@@ -77,8 +77,10 @@ export const query = graphql`
           date(formatString: "MMMM D, YYYY")
           title
         }
-        id
-        slug
+     id
+        fields {
+          slug
+        }
       }
     }
   }
