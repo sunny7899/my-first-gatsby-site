@@ -84,3 +84,5 @@ query MyQuery {
 Run project again after adding any plugin
 
 npm install gatsby-plugin-react-helmet react-helmet
+
+project not working currently
